@@ -1,0 +1,203 @@
+
+/* Css Resey */
+* { 
+     margin: 0;
+     padding: 0;
+}
+/* Header */
+header {
+     background-color: #76549A;
+     padding-left: 60px;
+}
+
+/* Navbar */
+nav ul {
+     text-align: center;
+}
+
+nav ul li { 
+     list-style-type: none;
+     display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 15px;
+    margin-left: -10px;
+    transition: 0.3s;
+    font-family: 'Poppins',sans-serif;
+    /* background: gr een; */
+}
+
+nav ul li a:hover { 
+     background-color: #999;
+     border-radius: 1px;
+     border-radius: 2px;
+}
+
+/* End navbar */
+
+/* Jumbotron */
+.jumbotron {
+     min-height: 400px;
+     background: rgba(209, 81, 45, .9);
+     text-align: center;
+     padding: 10px;
+     font-family: 'Poppins', sans-serif;
+     color: white;
+}
+
+ .jumbotron .profile {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin: auto;
+     margin-bottom: 15px;
+     overflow: hidden;
+     margin-top: 5px;
+     border: 5px solid #eee;
+ }
+
+ .jumbotron .profile img {
+     text-align: center;
+     width: 150px;
+     max-height: 150px;
+ }
+
+ .jumbotron h2 {
+     font-size: 1.5em;
+     margin-left: 10px;
+ }
+
+ /* about */
+ .about {
+     min-height: 300px;
+     padding: 10px 20px;
+     font-family: 'Poppins', sans-serif;
+     position: relative;
+     margin-top: 10px;
+     padding-bottom: 40px;
+ }
+
+ .about h2 {
+     text-align: center;
+ }
+
+ .about article {
+     width: 400px;
+     margin-top: 20px;
+     float: left;
+     margin-left: 30px;
+ }
+
+ /* End about */
+
+ /* Download CV */
+ .download-cv {
+     min-height: 400px;
+     font-family: 'Poppins', sans-serif;
+     clear: both;
+ }
+
+ .download-cv h2 {
+     text-align: center;
+ }
+
+ .sertifikat {
+     width: 300px;
+     margin-top: 30px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 3px rgba(0,0,0, .9);
+     float: left;
+     margin-left: 30px;
+     /* margin: auto; */
+     margin-bottom: 30px;
+     transition: .5s;
+     cursor: pointer;
+ }
+
+ .sertifikat img {
+     width: 300px;
+     max-height: 300px;
+ }
+
+ .sertifikat .keterangan-sertifikat {
+     padding: 5px 15px;
+ }
+
+ .sertifikat:hover {
+     transform: scale(1.1);
+ }
+
+ .container-cv {
+     width: 300px;
+     height: 300px;
+     padding: 10px;
+     margin: auto;
+     clear: both;
+ }
+
+ .container-cv .my-cv {
+     width: 200px;
+     height: 200px;
+     background-color: #ddd;
+     border-radius: 2px;
+     transition: .3s;
+     cursor: pointer;
+     margin: auto;
+ }
+
+ .container-cv .my-cv:hover {
+     background-color: #aaa;
+     transform: scale(1.1);
+ }
+
+ .container-cv p {
+     margin-top: 20px;
+ }
+
+ /* End Download CV */
+
+ /* Footer */
+ footer {
+     padding: 20px;
+     background-color: #ddd;
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+ }
+
+
+ /* Responsive */
+ @media (min-width: 300px) and (max-width :1326px) {
+     
+     /* About */
+     .about {
+          padding: 10px;
+          font-size: .9em;
+     }
+     .about article {
+          margin: auto;
+          margin-top: 20px;
+          float: none;
+      }
+     
+     /* Sertifikat */
+     .download-cv h2 {
+          margin-bottom: 30px;
+     }
+     .sertifikat {
+          width: 300px;
+          min-height: 300px;
+          margin: auto;
+          float: none;
+          margin-bottom: 40px;
+     }
+
+     .download-cv .sertifikat img {
+          width: 300px;
+          max-height: 300px;
+     }
+ }
