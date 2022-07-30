@@ -7,7 +7,7 @@
 /* Header */
 header {
      background-color: #76549A;
-     padding-left: 60px;
+     /* padding-left: 60px; */
 }
 
 /* Navbar */
@@ -87,7 +87,6 @@ nav ul li a:hover {
  }
 
  .about article {
-     width: 400px;
      margin-top: 20px;
      float: left;
      margin-left: 30px;
@@ -176,12 +175,20 @@ nav ul li a:hover {
      /* About */
      .about {
           padding: 10px;
-          font-size: .9em;
+          font-size: .8em;
+          text-align: center;
+          background-color: red;
+          overflow: hidden;
      }
      .about article {
-          margin: auto;
+          /* margin: auto; */
           margin-top: 20px;
           float: none;
+          background-color: red;
+      }
+
+      .about article p {
+          overflow: hidden;
       }
      
      /* Sertifikat */
@@ -201,3 +208,16 @@ nav ul li a:hover {
           max-height: 300px;
      }
  }
+
+ /* @media (min-width: 200px) and (max-width :300px) {
+     .about {
+          overflow: hidden;
+          width: auto;
+     }
+     
+     .about article {
+          font-size: 10px;
+          margin-left: 0;
+          float: none;
+      }
+ } */
