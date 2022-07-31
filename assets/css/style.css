@@ -1,5 +1,5 @@
 
-/* Css Resey */
+/* Css Reset */
 * { 
      margin: 0;
      padding: 0;
@@ -77,9 +77,9 @@ nav ul li a:hover {
      min-height: 300px;
      padding: 10px 20px;
      font-family: 'Poppins', sans-serif;
-     position: relative;
      margin-top: 10px;
      padding-bottom: 40px;
+     overflow: hidden;
  }
 
  .about h2 {
@@ -87,9 +87,11 @@ nav ul li a:hover {
  }
 
  .about article {
+     width: 400px;
      margin-top: 20px;
-     float: left;
      margin-left: 30px;
+     /* background-color: red; */
+     float: left;
  }
 
  /* End about */
@@ -106,21 +108,23 @@ nav ul li a:hover {
  }
 
  .sertifikat {
-     width: 300px;
+     width: 18%     ;
      margin-top: 30px;
      border-radius: 10px;
      box-shadow: 0px 0px 3px rgba(0,0,0, .9);
      float: left;
-     margin-left: 30px;
+     margin-right: 40px;
      /* margin: auto; */
      margin-bottom: 30px;
      transition: .5s;
      cursor: pointer;
+     position: relative;
+     left: 9%;
  }
 
  .sertifikat img {
-     width: 300px;
-     max-height: 300px;
+     width: 100%;     
+     max-height: 100%;
  }
 
  .sertifikat .keterangan-sertifikat {
@@ -137,6 +141,7 @@ nav ul li a:hover {
      padding: 10px;
      margin: auto;
      clear: both;
+     margin-bottom: 50px;
  }
 
  .container-cv .my-cv {
@@ -156,6 +161,7 @@ nav ul li a:hover {
 
  .container-cv p {
      margin-top: 20px;
+     margin-left: 50px;
  }
 
  /* End Download CV */
@@ -170,42 +176,41 @@ nav ul li a:hover {
 
 
  /* Responsive */
- @media (min-width: 300px) and (max-width :1326px) {
+ @media (min-width: 295px) and (max-width :1326px) {
      
      /* About */
      .about {
           padding: 10px;
+          padding-right: 30px;
           font-size: .8em;
           text-align: center;
-          background-color: red;
+          /* background-color: red; */
           overflow: hidden;
      }
      .about article {
           /* margin: auto; */
+          width: auto;
           margin-top: 20px;
           float: none;
-          background-color: red;
-      }
-
-      .about article p {
-          overflow: hidden;
+          /* background-color: red; */
       }
      
      /* Sertifikat */
      .download-cv h2 {
+        margin-top: 30px;
           margin-bottom: 30px;
      }
      .sertifikat {
-          width: 300px;
-          min-height: 300px;
+          width: 60%;
           margin: auto;
           float: none;
           margin-bottom: 40px;
+          left: 0;
      }
 
      .download-cv .sertifikat img {
-          width: 300px;
-          max-height: 300px;
+          width: 100%;
+          max-height: 100%;
      }
  }
 
