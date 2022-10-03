@@ -83,6 +83,7 @@ nav ul li a:hover {
  }
 
  .about h2 {
+    margin-top: 20px;
      text-align: center;
  }
 
@@ -91,7 +92,12 @@ nav ul li a:hover {
      margin-top: 20px;
      margin-left: 30px;
      /* background-color: red; */
-     float: left;
+ }
+
+ .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  /* End about */
@@ -134,36 +140,6 @@ nav ul li a:hover {
  .sertifikat:hover {
      transform: scale(1.1);
  }
-
- .container-cv {
-     width: 300px;
-     height: 300px;
-     padding: 10px;
-     margin: auto;
-     clear: both;
-     margin-bottom: 50px;
- }
-
- .container-cv .my-cv {
-     width: 200px;
-     height: 200px;
-     background-color: #ddd;
-     border-radius: 2px;
-     transition: .3s;
-     cursor: pointer;
-     margin: auto;
- }
-
- .container-cv .my-cv:hover {
-     background-color: #aaa;
-     transform: scale(1.1);
- }
-
- .container-cv p {
-     margin-top: 20px;
-     margin-left: 50px;
- }
-
  /* End Download CV */
 
  /* Footer */
@@ -176,32 +152,41 @@ nav ul li a:hover {
 
 
  /* Responsive */
- @media (min-width: 295px) and (max-width :1326px) {
+ @media (min-width: 400px) and (max-width :1326px) {
      
      /* About */
      .about {
           padding: 10px;
           padding-right: 30px;
-          font-size: .8em;
-          text-align: center;
           /* background-color: red; */
           overflow: hidden;
      }
+
+     .about h2 {
+        margin-left: 18px;
+     }
+
+     .about-me {
+        flex-direction: column;
+     }
+
      .about article {
           /* margin: auto; */
           width: auto;
           margin-top: 20px;
           float: none;
+          font-size: 1.1em;
           /* background-color: red; */
       }
      
      /* Sertifikat */
      .download-cv h2 {
-        margin-top: 30px;
-          margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 30px;
      }
+     
      .sertifikat {
-          width: 60%;
+          width: 45%;
           margin: auto;
           float: none;
           margin-bottom: 40px;
@@ -214,15 +199,38 @@ nav ul li a:hover {
      }
  }
 
- /* @media (min-width: 200px) and (max-width :300px) {
-     .about {
-          overflow: hidden;
-          width: auto;
-     }
-     
+ @media (max-width :400px) {
+    .about {
+        padding: 10px;
+        padding-right: 30px;
+    }
+    
+     .about-me {
+       display: block;
+       margin: 0 10px;
+     } 
+
      .about article {
-          font-size: 10px;
-          margin-left: 0;
-          float: none;
+        width: auto;
+        margin-top: 20px;
+        font-size: .8em;
       }
- } */
+
+      .download-cv {
+        margin-top: 30px;
+      }
+
+      .container-sertifikat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -15px;
+      }
+
+      .sertifikat {
+
+        width: 60%;
+      }
+ }
