@@ -79,11 +79,10 @@ nav ul li a:hover {
      font-family: 'Poppins', sans-serif;
      margin-top: 10px;
      padding-bottom: 40px;
-     overflow: hidden;
  }
 
  .about h2 {
-    margin-top: 20px;
+     margin-top: 20px;
      text-align: center;
  }
 
@@ -106,11 +105,15 @@ nav ul li a:hover {
  .download-cv {
      min-height: 400px;
      font-family: 'Poppins', sans-serif;
-     clear: both;
+     margin-bottom: 50px;
  }
 
  .download-cv h2 {
      text-align: center;
+ }
+
+ .container-sertifikat {
+    display: flex;
  }
 
  .sertifikat {
@@ -118,7 +121,6 @@ nav ul li a:hover {
      margin-top: 30px;
      border-radius: 10px;
      box-shadow: 0px 0px 3px rgba(0,0,0, .9);
-     float: left;
      margin-right: 40px;
      /* margin: auto; */
      margin-bottom: 30px;
@@ -174,8 +176,7 @@ nav ul li a:hover {
           /* margin: auto; */
           width: auto;
           margin-top: 20px;
-          float: none;
-          font-size: 1.1em;
+          font-size: .9em;
           /* background-color: red; */
       }
      
@@ -184,11 +185,15 @@ nav ul li a:hover {
         margin-top: 40px;
         margin-bottom: 30px;
      }
+
+     .container-sertifikat {
+        display: flex;
+        flex-direction: column;
+     }
      
      .sertifikat {
           width: 45%;
           margin: auto;
-          float: none;
           margin-bottom: 40px;
           left: 0;
      }
