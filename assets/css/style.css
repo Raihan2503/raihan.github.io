@@ -1,241 +1,114 @@
 
 /* Css Reset */
 * { 
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 /* Header */
 header {
-     background-color: #76549A;
-     /* padding-left: 60px; */
+    background-color: #76549A;
+    /* padding-left: 60px; */
 }
 
 /* Navbar */
 nav ul {
-     text-align: center;
+    text-align: center;
 }
 
 nav ul li { 
-     list-style-type: none;
-     display: inline-block;
+    list-style-type: none;
+    display: inline-block;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1em;
-    display: inline-block;
-    padding: 15px;
-    margin-left: -10px;
-    transition: 0.3s;
-    font-family: 'Poppins',sans-serif;
-    /* background: gr een; */
+   text-decoration: none;
+   color: white;
+   font-size: 1.1em;
+   display: inline-block;
+   padding: 15px;
+   margin-left: -10px;
+   transition: 0.3s;
+   font-family: 'Poppins',sans-serif;
+   /* background: gr een; */
 }
 
 nav ul li a:hover { 
-     background-color: #999;
-     border-radius: 1px;
-     border-radius: 2px;
+    background-color: #999;
+    border-radius: 1px;
+    border-radius: 2px;
 }
 
 /* End navbar */
 
 /* Jumbotron */
 .jumbotron {
-     min-height: 400px;
-     background: rgba(209, 81, 45, .9);
-     text-align: center;
-     padding: 10px;
-     font-family: 'Poppins', sans-serif;
-     color: white;
+    min-height: 400px;
+    background: #666;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
- .jumbotron .profile {
-     width: 150px;
-     height: 150px;
-     border-radius: 50%;
-     margin: auto;
-     margin-bottom: 15px;
-     overflow: hidden;
-     margin-top: 5px;
-     border: 5px solid #eee;
- }
+.jumbotron .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-top: 5px;
+    border: 5px solid #eee;
+}
 
- .jumbotron .profile img {
-     text-align: center;
-     width: 150px;
-     max-height: 150px;
- }
+.jumbotron .profile img {
+    text-align: center;
+    width: 140px;
+    max-height: 140px;
+}
 
- .jumbotron h2 {
-     font-size: 1.5em;
-     margin-left: 10px;
- }
-
- /* about */
- .about {
-     min-height: 300px;
-     padding: 10px 20px;
-     font-family: 'Poppins', sans-serif;
-     margin-top: 10px;
-     padding-bottom: 40px;
- }
-
- .about h2 {
-     margin-top: 20px;
-     text-align: center;
- }
-
- .about article {
-     width: 400px;
-     margin-top: 20px;
-     margin-left: 30px;
-     /* background-color: red; */
- }
-
- .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- /* End about */
-
- /* Download CV */
- .download-cv {
-     min-height: 400px;
-     font-family: 'Poppins', sans-serif;
-     margin-bottom: 50px;
- }
-
- .download-cv h2 {
-     text-align: center;
- }
-
- .container-sertifikat {
-    display: flex;
- }
-
- .sertifikat {
-     width: 18%     ;
-     margin-top: 30px;
-     border-radius: 10px;
-     box-shadow: 0px 0px 3px rgba(0,0,0, .9);
-     margin-right: 40px;
-     /* margin: auto; */
-     margin-bottom: 30px;
-     transition: .5s;
-     cursor: pointer;
-     position: relative;
-     left: 9%;
- }
-
- .sertifikat img {
-     width: 100%;     
-     max-height: 100%;
- }
-
- .sertifikat .keterangan-sertifikat {
-     padding: 5px 15px;
- }
-
- .sertifikat:hover {
-     transform: scale(1.1);
- }
- /* End Download CV */
-
- /* Footer */
- footer {
-     padding: 20px;
-     background-color: #ddd;
-     font-family: 'Poppins', sans-serif;
-     text-align: center;
- }
+.jumbotron h2 {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
 
 
- /* Responsive */
- @media (min-width: 400px) and (max-width :1326px) {
-     
-     /* About */
-     .about {
-          padding: 10px;
-          padding-right: 30px;
-          /* background-color: red; */
-          overflow: hidden;
-     }
+/* about */
+#about {
+   margin-top: 50px;
+   min-height: 340px;
+   padding: 20px;
+}
+/* End about */
 
-     .about h2 {
-        margin-left: 18px;
-     }
+#sertifikat {
+   margin-bottom: 6em;
+   min-height: 400px;
+}
 
-     .about-me {
-        flex-direction: column;
-     }
+.card {
+   max-width: 340px;
+   max-height: 100%;
+   margin: auto;
+}
 
-     .about article {
-          /* margin: auto; */
-          width: auto;
-          margin-top: 20px;
-          font-size: .9em;
-          /* background-color: red; */
-      }
-     
-     /* Sertifikat */
-     .download-cv h2 {
-        margin-top: 40px;
-        margin-bottom: 30px;
-     }
+/* Footer */
+footer {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
 
-     .container-sertifikat {
-        display: flex;
-        flex-direction: column;
-     }
-     
-     .sertifikat {
-          width: 45%;
-          margin: auto;
-          margin-bottom: 40px;
-          left: 0;
-     }
-
-     .download-cv .sertifikat img {
-          width: 100%;
-          max-height: 100%;
-     }
- }
-
- @media (max-width :400px) {
-    .about {
-        padding: 10px;
-        padding-right: 30px;
-    }
-    
-     .about-me {
+@media (min-width: 768px)  { 
+   #sertifikat {
+       margin-bottom: 6em;
+       min-height: 400px;
        display: block;
-       margin: 0 10px;
-     } 
+       margin-top: 0;
+    }
 
-     .about article {
-        width: auto;
-        margin-top: 20px;
-        font-size: .8em;
-      }
-
-      .download-cv {
-        margin-top: 30px;
-      }
-
-      .container-sertifikat {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left: -15px;
-      }
-
-      .sertifikat {
-
-        width: 60%;
-      }
+    .sertifikat .card {
+       width: 100%;
+   }
  }
